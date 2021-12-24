@@ -3,7 +3,7 @@ package com.bridgelabz;
 public class Queue {
 	Node front, rear;
 
-	public void enqueue(int x) {        // Enqueue in Queue
+	public void enqueue(int x) { // Enqueue in Queue
 		Node newNode = new Node(x);
 		if (isEmpty()) {
 			rear = newNode;
@@ -30,4 +30,13 @@ public class Queue {
 			}
 		}
 	}
+
+	public void dequeue(){
+	        if(isEmpty()){
+	            System.out.println("QUEUE is Empty.Please add Data to delete ");
+	        }
+	        else
+	            front=front.next;
+	        
+	    }
 }
